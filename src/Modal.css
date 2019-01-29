@@ -1,0 +1,90 @@
+.articleModal {
+    background-color: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    animation-name: animateFromTop;
+    animation-duration: 0.2s;
+}
+
+@keyframes animateFromTop {
+    from {top: -400px; opacity: 0}
+    to {top: 0; opacity: 1}
+}
+  
+.article-modal-content {
+    background-color: white;
+    padding: 1rem;
+    width: 800px; 
+    height: 400px; 
+    overflow: scroll;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 15px;
+}
+
+.modal-header {
+    background-color: #bb1919;
+    width: 830px;
+    height: 40px;
+}
+
+.modal-footer {
+    background-color : #bb1919;
+    width: 830px;
+    height: 20px;
+}
+
+.article-modal-content div{
+    align-content: center;
+}
+
+.article-modal-content .modal-title{
+    color: rgb(78, 78, 78);
+    font-size: 35px;
+    align-content: center;
+    flex-grow: 1;
+    font-weight: bold;
+    text-align: center;
+}
+
+.article-modal-content .modal-sourceInfo{
+    color: rgb(78, 78, 78);
+    text-align: right;
+    align-content: center;
+    flex-grow: 1;
+    font-weight: bold;
+    margin-right: 50px;
+}
+
+.article-modal-content .modal-content{
+    width: 90%;
+    color: rgb(78, 78, 78);
+    transition: all .2s ease-in-out;
+    flex-grow: 5;
+    align-self: center;
+}
+
+.article-modal-content .modal-content:hover {
+    transform: scale(1.01);
+}
+
+.article-modal-content img{
+    float: left;
+    width: 40%;
+    margin-right: 50px;
+}
+
+.article-modal-content a {
+    color: rgb(78, 78, 78);
+    text-decoration: none;
+    column-count: 2;
+    width: 300px;
+}

@@ -1,0 +1,8 @@
+.list {
+    border: 1px solid black;
+    margin: 6px;
+    padding: 2px;
+    width: 180px;
+    height: 20px;
+    font-size: 12px;
+}
