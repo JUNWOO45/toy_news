@@ -50,12 +50,6 @@ class Header extends Component {
         });
     }
 
-    openPublisherModal() {
-        this.setState({
-            open_publisher_modal : true
-        });
-    }
-
     closePublisherModal() {
         this.setState({
             open_publisher_modal : false
